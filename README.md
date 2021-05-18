@@ -1,49 +1,16 @@
-# Laravel REST API with Sanctum
+How to get this stuff working: 
 
-This is an example of a REST API using auth tokens with Laravel Sanctum
+Host an SQL server with the .sql information included in this repository. Give it an import. Edit the .env settings to suit your environment. In my case I just booted up an XAMPP instance because I'm spread way to thin nowadays. 
 
-## Usage
+go to the directory of the project
 
-Change the *.env.example* to *.env* and add your database info
+composer install
+npm install
+npm run prod
 
-For SQLite, add
-```
-DB_CONNECTION=sqlite
-DB_HOST=127.0.0.1
-DB_PORT=3306
-```
+Windows: copy .env.example .env
+Mac:     cp .env.example .env
 
-Create a _database.sqlite_ file in the _database_ directory
+Should be up and running!
 
-```
-# Run the webserver on port 8000
-php artisan serve
-```
-
-## Routes
-
-```
-# Public
-
-GET   /api/products
-GET   /api/products/:id
-
-POST   /api/login
-@body: email, password
-
-POST   /api/register
-@body: name, email, password, password_confirmation
-
-
-# Protected
-
-POST   /api/products
-@body: name, slug, description, price
-
-PUT   /api/products/:id
-@body: ?name, ?slug, ?description, ?price
-
-DELETE  /api/products/:id
-
-POST    /api/logout
-```
+If none of these things work as intended panic! Then google the issue! 
