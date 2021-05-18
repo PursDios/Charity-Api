@@ -14,3 +14,7 @@ Mac:     cp .env.example .env
 Should be up and running!
 
 If none of these things work as intended panic! Then google the issue! 
+
+Then you just post / get from the api.
+
+I used postman for my requests. Have fun!
