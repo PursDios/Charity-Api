@@ -1,3 +1,5 @@
+My first ever time building an API!
+
 How to get this stuff working: 
 
 Host an SQL server with the .sql information included in this repository. Give it an import. Edit the .env settings to suit your environment. In my case I just booted up an XAMPP instance because I'm spread way to thin nowadays. 
